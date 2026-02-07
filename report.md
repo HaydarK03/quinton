@@ -45,109 +45,159 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 
 ### Kernel
 
+1. kernel vfio
+
 | Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
 | ------ | -------- | -------- | ------------- | ------------- | ------------ |
 | vfio    | 26,9%    | 354M     | 66,2–87,3%    | 1,4G          | 37 detik     |
 
 <img src="img/linux-vfio-idle.png" width="800">
 
-> Berikut hasil testing kernel pada saat tidak menjalankan aplikasi  
+> Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-<img src="img/linux-vfio-using.png" width="800">
+<img src="img/linux-vfio-pemakaian.png" width="800">
 
-### Desktop Enviroment
+> Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
-#### fluxbox 1.2.7
-| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
-|---------------------|----------|----------|---------------|---------------|----|
-| Fluxbox 1.3.7 | 2,6% | 309M | 3,6–49,7% | 887M | Tampilan minimalis dan cenderung kaku; tidak ada dark mode bawaan. Navigasi menu cukup sulit bagi pemula karena berbasis klik kanan tanpa panel modern. Respons mouse dan keyboard baik, sistem terasa ringan dan cepat, namun fitur visual terbatas serta tidak ada dock bawaan. |
+2. kernel git
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/0a3e873c-d589-4686-bf6a-425e856393af" />
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| git    | 1-2,6%    | 576M     | 66,2–99,1%    | 1,08G         | 13 detik     |
 
-> bukti saat idle
+<img src="img/linux-git-idle.png" width="800">
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/2e276cc5-5a57-498e-93a5-a885d7dd54c9" />
+> Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-> bukti saat pemakaian
+<img src="img/linux-git-using.png" width="800">
 
-  
-#### Openbox 3.6.1
-| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
-|---------------------|----------|----------|---------------|---------------|----|
-| Openbox 3.6.1 | 1% | 394M | 40–67% | 1,02G | Tampilan sangat minimalis (default hanya layar hitam) dengan dark mode. Navigasi menu sulit dan pengaturan sistem harus dipasang manual, sehingga tidak ramah pemula. Respons workspace cepat dan animasi halus, namun touchpad untuk klik tidak berfungsi serta tampilan kurang user-friendly tanpa konfigurasi tambahan. |
+> Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/ccd144e0-63b3-4b50-b6cf-a135e6ff814b" />
+3. kernel lqx
 
-> bukti saat idle
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| lqx    | 1,9%     | 661M     | 36-89%        | 1,23G         | 30 detik     |
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/d98d7006-957b-4ffa-b08e-44d8cc0a2003" />
+<img src="img/linux-lqx-idle.png" width="800">
 
-> bukti saat pemakaian
+> Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-#### lxde 
-| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
-|---------------------|----------|----------|---------------|---------------|----|
-| LXDE 1508 | 2,3% | 482M | 30–60% | 1020M | Tampilan klasik dengan dark mode dan navigasi menu yang mudah, sehingga ramah untuk pemula. Pengaturan sistem cukup lengkap meski tersebar di banyak bagian. Respons mouse dan keyboard baik, switching workspace lancar, namun animasi kurang halus dan ada jeda saat membuka aplikasi serta lag saat scroll YouTube. |
+<img src="img/linux-lqx-using.png" width="800">
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/16443ce9-0a6f-491b-8116-0b7560a45bf1" />
+> Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
-> bukti saat idle
+4. kernel lts61
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/b093f400-7486-45b2-b72c-b9e1c9927e35" />
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| lts61  | 2,2-3,8% | 600M     | 24-94%        | 1,21G         | 22 detik     |
 
-> bukti saat pemakaian
+<img src="img/linux-lts61-idle.png" width="800">
 
-#### mate
-| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
-|---------------------|----------|----------|---------------|---------------|----|
-| MATE 1.28.2 | 1,9% | 558M | 82,2–98% | 1,11G | Tampilan default terkesan kuno namun mendukung dark mode. Navigasi menu mudah dan pengaturan sistem lengkap, sehingga ramah untuk pemula. Respons mouse dan keyboard baik dengan animasi halus, tetapi terdapat delay saat membuka halaman baru, berpindah tab, dan scroll YouTube. |
+> Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/3eefd623-b037-4d55-9554-82e2d8cfaadd" />
+<img src="img/linux-lts61-using.png" width="800">
 
-> bukti saat idle
+> Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/65f5a92f-76a4-4794-adbf-85a628137f25" />
+5. kernel lts66
 
-> bukti saat pemakaian
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| lts66  | 1,9%     | 630M     | 39,8-96%      | 1,11G         | 24 detik     |
 
-#### XFCE
-| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
-|---------------------|----------|----------|---------------|---------------|----|
-| XFCE 4.20 | 2% | 565M | 40–90% | 1,03G | Tampilan default terkesan kuno namun mendukung dark mode. Navigasi menu mudah dan pengaturan sistem lengkap, sehingga ramah untuk pemula. Respons mouse dan keyboard baik dengan animasi halus, serta stabil untuk penggunaan harian, meskipun ada sedikit lag saat membuka halaman baru dan scroll YouTube. |
+<img src="img/linux-lts66-idle.png" width="800">
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/6927ec12-735e-404d-9903-60d731c336d5" />
+> Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-> bukti saat idle
+<img src="img/linux-lts66-using.png" width="800">
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/5c349f57-cf2f-4b76-a29b-8a64805b81a1" />
+> Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
-> bukti saat pemakaian
+6. kernel mainline
 
-#### icewm
-| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
-|---------------------|----------|----------|---------------|---------------|----|
-| IceWM 4.0.0 | 2,9% | 418M | 36–90% | 1,14G | Tampilan default sangat sederhana dengan taskbar di bawah dan mendukung dark mode. Navigasi menu sedikit sulit bagi pengguna baru meski pengaturan sistem cukup lengkap. Respons mouse dan keyboard baik dengan animasi halus, serta performa stabil, namun tampilan terasa tua dan ada sedikit delay saat scroll YouTube. | 
+| Kernel   | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------   | -------- | -------- | ------------- | ------------- | ------------ |
+| mainline | 1,9%     | 360M     | 36-86%        | 971G          | 35 detik     |
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/92925252-5d5e-4848-8fe7-c3fef5c43d91" />
+<img src="img/linux-mainline-idle.png" width="800">
 
-> bukti saat idle
+> Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c0665344-67cf-4536-958b-3efbb34c88b0" />
+<img src="img/linux-mainline-using.png" width="800">
 
-> bukti saat pemakaian
+> Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
-#### lxqt
-| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
-|---------------------|----------|----------|---------------|---------------|----|
-| LXQt 2.3 | 3,9% | 543M | 50–90% | 1,13G | Tampilan default terkesan kuno namun mendukung dark mode. Navigasi menu mudah dan pengaturan sistem lengkap sehingga ramah untuk pemula. Respons mouse dan keyboard baik dengan animasi halus, performa multitasking stabil, namun ada delay saat membuka aplikasi dan scroll YouTube, serta tap touchpad tidak berfungsi. |
+7. kernel rt
 
-<img width="1886" height="979" alt="image" src="https://github.com/user-attachments/assets/eb434311-09d0-462b-8bfa-99ea4a8e95d0" />
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| rt     | 5,4%     | 538M     | 43,8%         | 1,18G         | 12 detik     |
 
-> bukti saat idle
+<img src="img/linux-rt-idle.png" width="800">
 
-<img width="1886" height="979" alt="image" src="https://github.com/user-attachments/assets/3101e88c-20b0-427e-95b4-e62633402681" />
+> Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-> bukti saat pemakaian
+<img src="img/linux-rt-using.png" width="800">
+
+> Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
+
+8. kernel rt-lts
+
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| rt-lts | 1,9%     | 435M     | 50-94%        | 1,14G         | 21 detik     |
+
+<img src="img/linux-rt-lts-idle.png" width="800">
+
+> Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
+
+<img src="img/linux-rt-lts-using.png" width="800">
+
+> Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
+
+9. kernel tachyon
+
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| tachyon| 1,6%     | 323M     | 36,8-90,1%    | 1,4G         | 35 detik     |
+
+<img src="img/linux-tachyon-idle.png" width="800">
+
+> Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
+
+<img src="img/linux-tachyon-using.png" width="800">
+
+> Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
+
+10. kernel vfio-lts
+
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| vfio-lts| 2%       | 565M     | 40-90%        | 1,03G         | 21 detik     |
+
+<img src="img/linux-vfio-lts-idle.png" width="800">
+
+> Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
+
+<img src="img/linux-vfio-lts-using.png" width="800">
+
+> Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
+
+11. kernel zen
+
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| zen    | 5,4%     | 538M     | 41,7%         | 1,18G         | 12 detik     |
+
+<img src="img/linux-zen-idle.png" width="800">
+
+> Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
+
+<img src="img/linux-zen-using.png" width="800">
+
+> Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
 ## Conclusion
 
