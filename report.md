@@ -49,12 +49,11 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 | ------ | -------- | -------- | ------------- | ------------- | ------------ |
 | vfio    | 26,9%    | 354M     | 66,2–87,3%    | 1,4G          | 37 detik     |
 
-berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 <img src="img/linux-vfio-idle.png" width="800">
+> berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-Di bawah ini adalah hasil testing ketika membuka aplikasi youtube dan slims
 <img src="img/linux-vfio-using.png" width="800">
-
+> Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
 ## Conclusion
 
