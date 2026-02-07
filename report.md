@@ -190,7 +190,7 @@ Pendekatan ini dilakukan agar hasil riset mencerminkan kondisi nyata di lapangan
 * **mainline / tachyon** – 35 detik
 * **lqx** – 30 detik
 
-👉 **Catatan:** cepat buka Firefox **tidak selalu berarti respons sistem baik** (contoh: linux lts).
+**Catatan:** cepat buka Firefox **tidak selalu berarti respons sistem baik** (contoh: linux lts).
 
 ---
 
@@ -209,7 +209,7 @@ Pendekatan ini dilakukan agar hasil riset mencerminkan kondisi nyata di lapangan
 * **tkg** (hingga 96%)
 * **lts66** (hingga 96%)
 
-👉 Kernel agresif terasa cepat, tapi **berpotensi bikin lag di hardware lemah**.
+Kernel agresif terasa cepat, tapi **berpotensi bikin lag di hardware lemah**.
 
 ---
 
@@ -227,7 +227,7 @@ Pendekatan ini dilakukan agar hasil riset mencerminkan kondisi nyata di lapangan
 * **vfio / tachyon** – 1,4G
 * **lqx** – 1,23G
 
-👉 Untuk RAM 2 GB, **mainline dan vfio-lts paling aman**.
+Untuk RAM 2 GB, **mainline dan vfio-lts paling aman**.
 
 ---
 
@@ -271,7 +271,7 @@ Pendekatan ini dilakukan agar hasil riset mencerminkan kondisi nyata di lapangan
 * **linux zen**
 * **linux-rt**
 
-👉 Kernel non-LTS & non-RT **lebih sering tidak konsisten stabilitasnya**.
+Kernel non-LTS & non-RT **lebih sering tidak konsisten stabilitasnya**.
 
 ---
 
@@ -285,31 +285,10 @@ Tidak lolos pengujian:
 * **xanmod**
 * **xanmod-rt**
 
-❌ Tidak layak dipakai di sistem uji ini.
+Tidak layak dipakai di sistem uji ini.
 
 ---
 
-## 7. Kesimpulan Akhir (Berdasarkan Data)
-
-### 🔥 Kernel Paling Seimbang (Rekomendasi)
-
-1. **vfio-lts** → RAM hemat, delay ringan, stabil
-2. **mainline** → RAM paling irit, delay minimal
-3. **tkg** → cepat & responsif setelah load awal
-
-### ⚠️ Cukup Tapi Kurang Nyaman
-
-* lts66
-* linux-lts61
-* linux-rt-lts
-
-### ❌ Tidak Direkomendasikan
-
-* vfio (non-lts)
-* lqx
-* linux lts / linux / linux zen / linux-rt
-* kernel yang statusnya **gagal**
-* 
 ### Desktop Environment 
 Perbandingan Desktop Environment
 1. Penggunaan CPU
@@ -387,3 +366,22 @@ LXQt 2.3 menawarkan fitur dan multitasking yang baik, tampilan modern dengan dar
 - Untuk pengguna pemula, XFCE dan LXQt lebih ramah, meski lebih berat.
 
 - Untuk keseimbangan ringan dan usability, LXDE dan XFCE (dengan optimasi) menjadi pilihan kompromi terbaik.
+
+### Kernel Paling Seimbang (Rekomendasi)
+
+1. **vfio-lts** → RAM hemat, delay ringan, stabil
+2. **mainline** → RAM paling irit, delay minimal
+3. **tkg** → cepat & responsif setelah load awal
+
+### Cukup Tapi Kurang Nyaman
+
+* lts66
+* linux-lts61
+* linux-rt-lts
+
+### Tidak Direkomendasikan
+
+* vfio (non-lts)
+* lqx
+* linux lts / linux / linux zen / linux-rt
+* kernel yang statusnya **gagal**
